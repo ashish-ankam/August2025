@@ -1,5 +1,11 @@
 package threads;
+/*
+ * Highest priority number , it will get highest priority and it will be executed first by Thread Scheduler 
+ * 
+ * 
+ * 
 
+*/
 public class Thread2  extends Thread{
 	
 	@Override
