@@ -11,7 +11,9 @@ public class ThreadsPractice extends Thread {
 	public static void main(String[] args) {
 		
 		 ThreadsPractice t = new ThreadsPractice();
-		 t.start();
+		 Thread t1 = new Thread();
+		 t1.start();
+		 //t.start();
 		 System.out.println("inside main thread...");
 		 
 		 
