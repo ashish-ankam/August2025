@@ -14,10 +14,10 @@ public class HttpClientSyncDemo {
 		HttpClient client = HttpClient.newHttpClient();
 		HttpRequest request = HttpRequest.newBuilder(new URI("https://fakerestapi.azurewebsites.net/api/v1/Activities")).GET().build();
 		
-	HttpResponse<String>	response = client.send(request, BodyHandlers.ofString());
+	    HttpResponse<String>	response = client.send(request, BodyHandlers.ofString());
 		
-	System.out.println("Status ====> " + response.statusCode());
-	System.out.println(response.body());
+	    System.out.println("Status ====> " + response.statusCode());
+	    System.out.println(response.body());
 	
 	
 	}
