@@ -1,3 +1,5 @@
+package threads;
+
 import java.util.Arrays;
 
 public class LaunchArray5
