@@ -12,37 +12,24 @@ public class DrivingLicenceMain {
 		System.out.println("Application Closed Succefully");
 		} catch (OverAgeException | UnderAgeException e) {
 			
-			
-			System.out.println("First Mistake, Please Try Again");
+			System.out.println("1 more Chance , Application proceed");
+			e.printStackTrace();
 			
 			try {
 				appStart.TakeInput();
 				
 				appStart.Validate();
+				
 				System.out.println("Application Closed Succefully");
 				} catch (OverAgeException | UnderAgeException e1) {
 					
-					
-					System.out.println("Second Mistake, Please Try Again");
-					
-					
-					try {
-						appStart.TakeInput();
-						
-						appStart.Validate();
-						System.out.println("Application Closed Succefully");
-						} catch (OverAgeException | UnderAgeException e2) {
-							
-							
-							System.out.println("Application Closed");
-							e2.printStackTrace();
-							
-							
-						}
+					System.out.println("Chances are Over , Application locked");
+					e1.printStackTrace();
 					
 				}
+			
 		}
-
+		
 	}
 
 }

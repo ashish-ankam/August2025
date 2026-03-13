@@ -24,11 +24,13 @@ public class DrivingLicenceApp {
 		
 		else if(age>70){
 			OverAgeException oe = new OverAgeException("Please Enter the age correctly less than 70");
+			System.out.println(oe.getMessage());
 			throw oe; 
 			
 		}
 		else {
 			UnderAgeException ue = new UnderAgeException("Please enter the age above 18 years");
+			System.out.println(ue.getMessage());
 			throw ue;
 		}
 	}
